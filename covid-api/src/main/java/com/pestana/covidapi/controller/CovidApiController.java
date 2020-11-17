@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,6 +23,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 @Api (value = "COVID-19 API")
+@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 public class CovidApiController {
 
 	@Autowired
@@ -36,7 +38,7 @@ public class CovidApiController {
 		return covid19BrazilApi.getCountriesListWithCases();
 	}
 	
-	@ApiOperation(value = "Retorna uma os casos/mortes por COVID-19 de um determinado país.")
+	@ApiOperation(value = "Retorna os casos/mortes por COVID-19 de um determinado país.")
 	@GetMapping("/countries/{countryName}")
 	public Covid19BrazilApiData getCountryByName(@PathVariable(value = "countryName") String countryName) {
 		return covid19BrazilApi.getCountryByName(countryName);
