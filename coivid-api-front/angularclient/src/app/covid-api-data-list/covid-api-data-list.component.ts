@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { Covid19BrazilApiData } from "../covid19-brazil-api-data";
-import { CovidApiService } from "../covid-api-service.service";
+import { Covid19BrazilApiData } from "../data/covid19-brazil-api-data";
+import { CovidApiService } from "../service/covid-api-service.service";
 
 @Component({
   selector: "app-user-list",

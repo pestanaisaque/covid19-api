@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
-import { Covid19BrazilApiData } from "./covid19-brazil-api-data";
+import { Covid19BrazilApiData } from "../data/covid19-brazil-api-data";
 import { Observable } from "rxjs/Observable";
 
 @Injectable()

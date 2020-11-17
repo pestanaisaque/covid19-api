@@ -7,7 +7,7 @@ import { AppComponent } from "./app.component";
 import { CovidApiDataListComponent } from "./covid-api-data-list/covid-api-data-list.component";
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 
-import { CovidApiService } from "./covid-api-service.service";
+import { CovidApiService } from "./service/covid-api-service.service";
 
 @NgModule({
   declarations: [AppComponent, CovidApiDataListComponent],
