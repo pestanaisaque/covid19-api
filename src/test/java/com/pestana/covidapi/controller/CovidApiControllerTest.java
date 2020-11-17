@@ -61,6 +61,7 @@ public class CovidApiControllerTest {
 	
 	@Test
 	public void shouldSaveCountryInFavorites() {
+		doReturn(Optional.empty()).when(mockFavoriteRepository).findByCountryName(default_request.getCountry());
 		mockCovidApiController.saveCountryInFavorites(default_request);
 		verify(mockFavoriteRepository, times(1)).save(Mockito.any());
 	}
