@@ -1,0 +1,7 @@
+{"properties": [
+  {
+    "name": "covid19.brazil.api",
+    "type": "java.lang.String",
+    "description": "API responsável por retornar uma lista de casos/mortes por COVID-19"
+  }
+]}
