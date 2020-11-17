@@ -35,7 +35,7 @@ public class SwaggerConfig {
 	{
 		return new ArrayList<>(Arrays.asList(new ResponseMessageBuilder()
 	            .code(500)
-	            .message("500 message")
+	            .message("Internal Server Error")
 	            .responseModel(new ModelRef("Error"))
 	            .build(),
 	            new ResponseMessageBuilder()
